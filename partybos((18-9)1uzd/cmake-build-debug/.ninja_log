@@ -1,0 +1,17 @@
+# ninja log v6
+7	681	7798792495076785	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+838	1016	7798781284916397	partybos__18_9_1uzd.exe	ba177905fce4eab
+22	964	7798789844083692	CMakeFiles/partybos__18_9_1uzd.dir/uzd2.cpp.obj	423f864bbf78846
+3	390	7798793407690394	build.ninja	d7e3f501d29e8195
+64	805	7798793409316030	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+806	960	7798793416728620	partybos__18_9_1uzd.exe	ba177905fce4eab
+17	703	7798793800717152	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+704	844	7798793807587956	partybos__18_9_1uzd.exe	ba177905fce4eab
+11	676	7798794517509367	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+677	807	7798794524160220	partybos__18_9_1uzd.exe	ba177905fce4eab
+11	803	7798800337309923	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+804	941	7798800345235467	partybos__18_9_1uzd.exe	ba177905fce4eab
+13	708	7798806050572110	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+709	855	7798806057540483	partybos__18_9_1uzd.exe	ba177905fce4eab
+8	768	7798809859735481	CMakeFiles/partybos__18_9_1uzd.dir/main.cpp.obj	d2e3108ba7138444
+769	925	7798809867344025	partybos__18_9_1uzd.exe	ba177905fce4eab

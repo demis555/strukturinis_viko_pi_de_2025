@@ -1,0 +1,3 @@
+C:/Users/s062265/CLionProjects/partybos((18-9)1uzd/cmake-build-debug/CMakeFiles/partybos__18_9_1uzd.dir
+C:/Users/s062265/CLionProjects/partybos((18-9)1uzd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/s062265/CLionProjects/partybos((18-9)1uzd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
