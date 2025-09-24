@@ -1,0 +1,6 @@
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/uzd2.dir
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/uzd4.dir
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/uzd5.dir
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/s062265/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
