@@ -55,5 +55,13 @@ int main()
     cin >> A5 >> B5 >> C5 >> D5 >> E5;
     double ATS = (A5+B5+C5+D5+E5)/5;
     cout <<"Vidurkis: " << ATS << endl;
+    //Sesta uzduotis
+    cout << "Ivesk dvizenkli skaiciu" << endl;
+    int DviSk;
+    cin >> DviSk;
+    int BB = DviSk%10;
+    int CC = (DviSk-BB)/10;
+    int ATSS = CC+BB;
+    cout << ATSS << endl;
     return 0;
 }
