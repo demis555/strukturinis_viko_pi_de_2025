@@ -1,42 +1,47 @@
-//pirma uzd, studentu pazymiu lentele
 #include <iostream>
-using namespace std;
-int main() {
-    int n=8;
-    int m=4;
-    int pazymiai[8][4];
+#include <iomanip>
+#include <string>
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            switch (j) {
-                case 0: {
-                    cout << "Iveskite "<<i+1<<" studento pazymi dalykui: istorija" << endl;
-                    cin >> pazymiai[i][j];
-                    break;
-                }
-                case 1: {
-                    cout << "Iveskite "<<i+1<<" studento pazymi dalykui: matematika" << endl;
-                    cin >> pazymiai[i][j];
-                    break;
-                }
-                case 2: {
-                    cout << "Iveskite "<<i+1<<" studento pazymi dalykui: informatika" << endl;
-                    cin >> pazymiai[i][j];
-                    break;
-                }
-                case 3: {
-                    cout << "Iveskite "<<i+1<<" studento pazymi dalykui: anglu kalba" << endl;
-                    cin >> pazymiai[i][j];
-                    break;
-                }
-            }
+using namespace std;
+
+int main() {
+    const int students = 8;
+    const int subjects = 4;
+
+    string subjectNames[subjects] = {"Istorija", "Matematika", "Informatika", "Anglų"};
+    int pazymiai[students][subjects] = {}; // inicializuojame 0
+
+    // Įvedimas
+    for (int i = 0; i < students; ++i) {
+        cout << "---- Studentas " << i+1 << " ----\n";
+        for (int j = 0; j < subjects; ++j) {
+            cout << "Įveskite " << i+1 << " studento pažymį dalykui: " << subjectNames[j] << " : ";
+            cin >> pazymiai[i][j];
         }
+        cout << '\n';
     }
-    for(int i = 0; i < m; i++) {
-        for(int j = 0; j < n; j++) {
-            cout << pazymiai[i][j] << " ";
+
+    // Išvedimas lentelėje
+    const int nameWidth = 12;
+    const int colWidth = 10;
+
+    cout << left << setw(nameWidth) << "Studentas";
+    for (int j = 0; j < subjects; ++j) cout << setw(colWidth) << subjectNames[j];
+    cout << setw(colWidth) << "Vidurkis" << '\n';
+
+    cout << string(nameWidth + colWidth * (subjects + 1), '-') << '\n';
+
+    for (int i = 0; i < students; ++i) {
+        string label = "Nr." + to_string(i+1);
+        cout << left << setw(nameWidth) << label;
+        int sum = 0;
+        for (int j = 0; j < subjects; ++j) {
+            cout << setw(colWidth) << pazymiai[i][j];
+            sum += pazymiai[i][j];
         }
-        cout << endl;
+        double avg = static_cast<double>(sum) / subjects;
+        cout << fixed << setprecision(2) << setw(colWidth) << avg << '\n';
     }
+
     return 0;
 }
