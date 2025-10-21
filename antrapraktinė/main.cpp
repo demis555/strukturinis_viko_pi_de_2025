@@ -49,10 +49,10 @@ int main() {
                 pasalintiMokini(vardai, pazymiuKiekis, pazymiai, mokiniuSkaicius);
                 break;
             case 0:
-                cout << "Programa baigia darba. Viso gero!" << endl;
+                cout << "Programa baigia darba." << endl;
                 break;
             default:
-                cout << "Neteisingas pasirinkimas! Bandykite dar karta." << endl;
+                cout << "Neteisingas pasirinkimas, bandykite dar karta." << endl;
         }
 
         cout << endl;
@@ -156,6 +156,14 @@ void perziuretiMokini(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_P
         return;
     }
 
+    cout << "=== MOKINIU SARASAS ===" << endl << endl;
+
+    for(int i = 0; i < mokiniuSkaicius; i++) {
+        cout << (i+1) << ". " << "Mokinys: " << vardai[i] << endl;
+    }
+
+    cout << endl << endl;
+
     string vardas;
     cout << "Iveskite mokinio varda: ";
     getline(cin, vardas);
@@ -192,6 +200,14 @@ void atnaujintiPazymi(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_P
         return;
     }
 
+    cout << "=== MOKINIU SARASAS ===" << endl << endl;
+
+    for(int i = 0; i < mokiniuSkaicius; i++) {
+        cout << (i+1) << ". " << "Mokinys: " << vardai[i] << endl;
+    }
+
+    cout << endl << endl;
+
     string vardas;
     cout << "Iveskite mokinio varda: ";
     getline(cin, vardas);
@@ -222,7 +238,7 @@ void atnaujintiPazymi(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_P
     cin >> pazymioPozicija;
 
     if(pazymioPozicija < 1 || pazymioPozicija > pazymiuKiekis[indeksas]) {
-        cout << "Klaida! Neteisinga pozicija!" << endl;
+        cout << "Klaida, neteisinga pozicija" << endl;
         return;
     }
 
@@ -232,7 +248,7 @@ void atnaujintiPazymi(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_P
         cin >> naujsPazymys;
 
         if(naujsPazymys < 1 || naujsPazymys > 10) {
-            cout << "Klaida! Pazymys turi buti tarp 1 ir 10." << endl;
+            cout << "Klaida, pazymys turi buti tarp 1 ir 10." << endl;
         }
     } while(naujsPazymys < 1 || naujsPazymys > 10);
 
@@ -242,9 +258,16 @@ void atnaujintiPazymi(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_P
 
 void pasalintiMokini(string vardai[], int pazymiuKiekis[], int pazymiai[][MAX_PAZ], int& mokiniuSkaicius) {
     if(mokiniuSkaicius == 0) {
-        cout << "Sarasas tuscias! Nera pridetu mokiniu." << endl;
+        cout << "Sarasas tuscias, nera pridetu mokiniu." << endl;
         return;
     }
+
+    cout << "=== MOKINIU SARASAS ===" << endl << endl;
+
+    for(int i = 0; i < mokiniuSkaicius; i++) {
+        cout << (i+1) << ". " << "Mokinys: " << vardai[i] << endl;
+    }
+
 
     string vardas;
     cout << "Iveskite mokinio varda, kuri norite pasalinti: ";
