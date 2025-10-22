@@ -1,0 +1,3 @@
+C:/Users/s062265/Desktop/strukturinis_programavimas/antraprakt/cmake-build-debug/CMakeFiles/antraprakt.dir
+C:/Users/s062265/Desktop/strukturinis_programavimas/antraprakt/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/s062265/Desktop/strukturinis_programavimas/antraprakt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
