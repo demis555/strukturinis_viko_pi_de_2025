@@ -1,0 +1,8 @@
+
+=== Darbuotoju atlyginimo ataskaita ===
+Pavarde        Vardas         Esamas atlyg. (USD) Padidejimo proc. (%)Naujas atlyg. (USD) 
+------------------------------------------------------------------------------------------
+Miller         Andrew         65789.9             5                   69079.4             
+Green          Sheila         75892.6             6                   80446.1             
+Sethi          Amit           74900.5             6.1                 79469.4             
+------------------------------------------------------------------------------------------
