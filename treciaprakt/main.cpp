@@ -147,7 +147,7 @@ void Atlyginimai(string vardas[], string pavarde[], double atlyginimas[], double
     cout << string(90, '-') << endl;
 
     for (int j = 0; j < n; j++) {
-        double naujasAtlyg = atlyginimas[j] * (1 + PadidProc[j] / 100.0);
+        double naujasAtlyg = atlyginimas[j] * (1 + PadidProc[j] / 100);
 
         cout << left << setw(15) << pavarde[j]
              << setw(15) << vardas[j]
@@ -172,7 +172,7 @@ void Atlyginimai(string vardas[], string pavarde[], double atlyginimas[], double
     IsvestAtlygFile << string(90, '-') << endl;
 
     for (int j = 0; j < n; j++) {
-        double naujasAtlyg = atlyginimas[j] * (1 + PadidProc[j] / 100.0);
+        double naujasAtlyg = atlyginimas[j] * (1 + PadidProc[j] / 100);
 
         IsvestAtlygFile << left << setw(15) << pavarde[j]
              << setw(15) << vardas[j]
