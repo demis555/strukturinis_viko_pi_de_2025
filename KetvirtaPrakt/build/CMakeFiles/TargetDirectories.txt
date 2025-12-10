@@ -1,0 +1,3 @@
+C:/Users/deg04/Documents/cpp viko/strukturinis_viko_pi_de_2025/KetvirtaPrakt/build/CMakeFiles/KetvirtaPrakt.dir
+C:/Users/deg04/Documents/cpp viko/strukturinis_viko_pi_de_2025/KetvirtaPrakt/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/deg04/Documents/cpp viko/strukturinis_viko_pi_de_2025/KetvirtaPrakt/build/CMakeFiles/ZERO_CHECK.dir
