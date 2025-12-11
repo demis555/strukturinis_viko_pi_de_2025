@@ -28,7 +28,7 @@ int main() {
     showMenu();
 
     int nr, kiekis;
-    while (cout << "užsakymo nnumeris: " && cin >> nr && cout << "kiekis:" && cin >> kiekis) {
+    while (cout << "užsakymo numeris: " && cin >> nr && cout << "kiekis:" && cin >> kiekis) {
         if (nr == 0) break;
         if (nr >= 1 && nr <= kiek && kiekis > 0) {
             uzsakyta[nr-1] += kiekis;
@@ -41,8 +41,6 @@ int main() {
 
 void getData() {
     ifstream f("menu.txt");
-    string pirmoeilute;
-    getline(f, pirmoeilute);               // praleidžiame antraštę
 
     kiek = 0;
     string eilute;
@@ -73,8 +71,7 @@ void showMenu() {
 }
 
 void printCheck() {
-    ofstream failas("receipt.txt", ios::binary);
-    failas << "\xEF\xBB\xBF";  // UTF-8 BOM for file
+    ofstream failas("receipt.txt");
     double suma = 0;
 
     cout << "Sveiki atvykę į restoraną „Pavadinimas“\n\n";
