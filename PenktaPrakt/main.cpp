@@ -115,10 +115,6 @@ void issaugotiRezultatus(const vector<Studentas>& studentai) {
 
 void klasesStatistika(const vector<Studentas>& studentai) {
     int n = studentai.size();
-    if (n == 0) {
-        cout << "Nėra studentų duomenų." << endl;
-        return;
-    }
 
     int pazymiuKiekis[11] = {0};
     double sumProcentai = 0.0;
@@ -149,7 +145,6 @@ void klasesStatistika(const vector<Studentas>& studentai) {
 //kiekvieno klausimo statistika
 void klausimuStatistika(const vector<Studentas>& studentai, const string& teisingiAtsakymai) {
     int n = studentai.size();
-    if (n == 0) return;
 
     int teisingai[20] = {0};
     int neteisingai[20] = {0};
@@ -179,7 +174,6 @@ void klausimuStatistika(const vector<Studentas>& studentai, const string& teisin
 // sunkaisio klausimo nustatymas
 void sunkiausiasKlausimas(const vector<Studentas>& studentai, const string& teisingiAtsakymai) {
     int n = studentai.size();
-    if (n == 0) return;
 
     int teisingai[20] = {0};
 
