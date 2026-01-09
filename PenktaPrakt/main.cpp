@@ -62,8 +62,6 @@ void skaitytiDuomenis(vector<Studentas>& studentai, string& teisingiAtsakymai) {
         string id = line.substr(0, spacePos);
         string ats = line.substr(spacePos + 1);
 
-        if (ats.length() != 20) continue;
-
         Studentas s;
         s.id = id;
         s.atsakymai = ats;
@@ -191,7 +189,7 @@ void sunkiausiasKlausimas(const vector<Studentas>& studentai, const string& teis
 
     for (int i = 0; i < 20; i++) {
         double proc = (teisingai[i] * 100.0) / n;
-        if (proc < minProcentas - 0.01) {
+        if (proc < minProcentas) {
             minProcentas = proc;
             sunkiausi.clear();
             sunkiausi.push_back(i + 1);
